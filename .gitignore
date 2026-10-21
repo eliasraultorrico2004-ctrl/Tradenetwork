@@ -1,0 +1,20 @@
+# Node.js
+node_modules/
+
+# Android Studio y Gradle
+.gradle/
+**/build/
+local.properties
+.idea/caches/
+.idea/workspace.xml
+
+# Archivos sensibles
+.env
+.env.*
+secrets.properties
+*.jks
+*.keystore
+
+# Firebase credentials / configuration
+google-services.json
+**/google-services.json
