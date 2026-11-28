@@ -56,6 +56,8 @@ dependencies {
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.storage)
+    implementation("com.google.firebase:firebase-appcheck-playintegrity")
+    implementation("androidx.security:security-crypto:1.1.0")
     implementation(libs.kotlinx.coroutines.play)
     implementation(libs.coil.compose)
 

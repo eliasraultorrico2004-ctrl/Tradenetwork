@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
     <base-config cleartextTrafficPermitted="false" />
+
+    <!-- Certificate Pinning configuration for Firestore / Google APIs -->
+    <domain-config>
+        <domain includeSubdomains="true">firestore.googleapis.com</domain>
+        <pin-set expiration="2027-01-01">
+            <!-- Replace with actual SHA-256 certificate pin hash for production -->
+            <pin digest="SHA-256">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</pin>
+        </pin-set>
+    </domain-config>
 </network-security-config>
